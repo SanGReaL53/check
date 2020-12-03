@@ -80,16 +80,16 @@ class LabirintTurtle():
                         a = self.lab[x][y]
                         if a != '*':
                             if a != 0:
-                                if self.lab[x - 1][y] != '*' and
+                                if self.lab[x - 1][y] != '*' and \
                                 self.lab[x - 1][y] == 0:
                                     self.lab[x - 1][y] = int(a) + 1
-                                if self.lab[x][y + 1] != '*' and
+                                if self.lab[x][y + 1] != '*' and \
                                 self.lab[x][y + 1] == 0:
                                     self.lab[x][y + 1] = int(a) + 1
-                                if self.lab[x + 1][y] != '*' and
+                                if self.lab[x + 1][y] != '*' and \
                                 self.lab[x + 1][y] == 0:
                                     self.lab[x + 1][y] = int(a) + 1
-                                if self.lab[x][y - 1] != '*' and
+                                if self.lab[x][y - 1] != '*' and \
                                 self.lab[x][y - 1] == 0:
                                     self.lab[x][y - 1] = int(a) + 1
         for i in range(len(self.lab)):
